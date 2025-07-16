@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\salid\snake\build\CMakeFiles\151226c4f01da5d40c083df21800140b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D6E5D436-20E8-39C4-93BA-5E54171B5DF0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

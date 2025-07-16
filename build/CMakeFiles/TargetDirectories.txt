@@ -1,0 +1,3 @@
+C:/Users/salid/snake/build/CMakeFiles/snake.dir
+C:/Users/salid/snake/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/salid/snake/build/CMakeFiles/ZERO_CHECK.dir

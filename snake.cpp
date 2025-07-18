@@ -11,8 +11,7 @@
 #define mix(a,b,t) ((b)*(t)+(a)*(1-(t)))
 
 using namespace std;
-/*
-W.I.P.
+
 // --------------------------------------------------------------- TRYING TO MAKE SHADERS WORK ---------------------------------------------------------------
 GLfloat Vert[] = {
     0.0f, 0.0f,
@@ -102,7 +101,7 @@ void setup() {
 }
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------
-*/
+
 
 const int WIDTH = 800, HEIGHT = 800;
 const int CELL_CONST_SIZE = 20;
@@ -119,7 +118,7 @@ bool paused = false;
 bool gameOver = false;
 int score = 0;
 GLFWwindow* window;
-/*
+
 void drawCell(int x, int y, int r, int g, int b, int CELL_SIZE, int c, bool issnake = true) {
     float fx = (x * CELL_SIZE) / (float)WIDTH * 2 - 1;
     float fy = (y * CELL_SIZE) / (float)HEIGHT * 2 - 1;
@@ -155,10 +154,10 @@ void drawCell(int x, int y, int r, int g, int b, int CELL_SIZE, int c, bool issn
     glVertex2f(fx + sizeX, fy);
     glVertex2f(fx + sizeX, fy + sizeY);
     glVertex2f(fx, fy + sizeY);
-    glEnd();*//*
+    glEnd();*/
 }
-*/
 
+/*
 void drawCell(int x, int y, float r, float g, float b, int CELL_SIZE) {
     float fx = (x * CELL_SIZE) / (float)WIDTH * 2 - 1;
     float fy = (y * CELL_SIZE) / (float)HEIGHT * 2 - 1;
@@ -173,7 +172,7 @@ void drawCell(int x, int y, float r, float g, float b, int CELL_SIZE) {
     glVertex2f(fx, fy + sizeY);
     glEnd();
 }
-
+*/
 void defeat() {
     //cout<<"TEMP_DEFEAT";
 }
@@ -186,14 +185,14 @@ void drawSnake() {
         const float dl = 1-((1-l)*(1-l));
         //if(c==0){drawCell(x, y, 0.5f, 0.0f, 0.5f, 20); drawCell(x+2, y+2, 0.0f, 0.0f, 0.0f, 2);}
         //else drawCell(x, y, mix(0.7f,0.0f,dl), 0.0f, mix(0.7f,0.0f,dl), 20);
-        if(c==0){drawCell(x, y, 0.0f, 0.8f, 0.0f, 20); /*drawCell(x+2, y+2, 0.0f, 0.0f, 0.0f, 2);*/}
-        else drawCell(x, y, 0.0f, mix(1.0f,0.5f,dl), 0.0f, 20);
+        if(c==0){drawCell(x, y, 0.0f, 0.8f, 0.0f, 20, c); /*drawCell(x+2, y+2, 0.0f, 0.0f, 0.0f, 2);*/}
+        else drawCell(x, y, 0.0f, mix(1.0f,0.5f,dl), 0.0f, 20, c);
         c++;
     }
 }
 
 void drawApple() {
-    drawCell(appleX, appleY, 1.0f, 0.0f, 0.0f, 20);
+    drawCell(appleX, appleY, 1.0f, 0.0f, 0.0f, 20, 0, false);
 }
 
 void updateWindowTitle() {
@@ -254,7 +253,7 @@ void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods) 
 }
 
 int main() {
-    //setup();
+    setup();
     srand(static_cast<unsigned>(time(NULL)));
 
     if (!glfwInit()) {

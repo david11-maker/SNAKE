@@ -254,7 +254,7 @@ void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods) 
 }
 
 int main() {
-    setup();
+    //setup();
     srand(static_cast<unsigned>(time(NULL)));
 
     if (!glfwInit()) {

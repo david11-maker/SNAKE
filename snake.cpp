@@ -8,9 +8,16 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <queue>
+
 #define mix(a,b,t) ((b)*(t)+(a)*(1-(t)))
 
 using namespace std;
+
+bool canTurn = true;
+queue<uint8_t> moves = {};
+
+int dirXLoc=1, dirYLoc=0;
 
 // --------------------------------------------------------------- FIXED SHADER HANDLING ---------------------------------------------------------------
 GLfloat Vert[] = {
@@ -118,7 +125,7 @@ const int CELL_CONST_SIZE = 20;
 const int COLS = WIDTH / CELL_CONST_SIZE;
 const int ROWS = HEIGHT / CELL_CONST_SIZE;
 
-deque<pair<int, int>> snake = {{10, 10}};
+deque<pair<int, int>> snake = {{11,10},{10, 10},{9,10}};
 int dirX = 1, dirY = 0;
 
 int appleX = rand() % COLS;
@@ -218,9 +225,27 @@ void updateWindowTitle() {
 }
 
 void moveSnake() {
+    if(moves.size()) {
+        switch(moves.front()) {
+        case 0:
+            dirXLoc = 0; dirYLoc = -1;  
+        break;
+        case 1:
+			dirXLoc = 0; dirYLoc = 1;
+        break;
+        case 2:
+            dirXLoc = -1; dirYLoc = 0;
+        break;
+        case 3:
+            dirXLoc = 1; dirYLoc = 0;
+        break;
+	}
+	moves.pop();
+    }
+
     auto head = snake.front();
-    int nx = (head.first + dirX + COLS) % COLS;
-    int ny = (head.second + dirY + ROWS) % ROWS;
+    int nx = (head.first + dirXLoc + COLS) % COLS;
+    int ny = (head.second + dirYLoc + ROWS) % ROWS;
 
     // Check self-collision (skip head)
     auto it = snake.begin();
@@ -246,10 +271,10 @@ void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods) 
     if (action != GLFW_PRESS) return;
 
     if (!paused && !gameOver) {
-        if (key == GLFW_KEY_DOWN && dirY != 1)    { dirX = 0; dirY = -1; }
-        else if (key == GLFW_KEY_UP && dirY != -1) { dirX = 0; dirY = 1; }
-        else if (key == GLFW_KEY_LEFT && dirX != 1)  { dirX = -1; dirY = 0; }
-        else if (key == GLFW_KEY_RIGHT && dirX != -1) { dirX = 1; dirY = 0; }
+        if (key == GLFW_KEY_DOWN && dirY != 1)    { moves.push(0);  dirX = 0; dirY = -1; }
+        else if (key == GLFW_KEY_UP && dirY != -1) { moves.push(1); dirX = 0; dirY = 1; }
+        else if (key == GLFW_KEY_LEFT && dirX != 1)  { moves.push(2); dirX = -1; dirY = 0; }
+        else if (key == GLFW_KEY_RIGHT && dirX != -1) { moves.push(3); dirX = 1; dirY = 0; }
     }
 
     if (key == GLFW_KEY_SPACE) {
@@ -257,8 +282,9 @@ void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods) 
     }
 
     if (key == GLFW_KEY_R && gameOver) {
-        snake = {{10, 10}};
+        snake = {{11,10},{10, 10},{9,10}};
         dirX = 1; dirY = 0;
+        dirXLoc = 1; dirYLoc = 0;
         score = 0;
         gameOver = false;
         paused = false;

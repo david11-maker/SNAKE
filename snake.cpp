@@ -21,7 +21,7 @@ int dirXLoc=1, dirYLoc=0;
 
 // --------------------------------------------------------------- FIXED SHADER HANDLING ---------------------------------------------------------------
 GLfloat Vert[] = {
-    0.0f, 0.0f,  0.0f, 0.0f, 
+    0.0f, 0.0f,  0.0f, 0.0f,
     1.0f, 0.0f, 1.0f, 0.0f,
     1.0f, 1.0f, 1.0f, 1.0f,
     0.0f, 1.0f, 0.0f, 1.0f
@@ -100,30 +100,33 @@ void setup() {
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);
-    
+
     glBindVertexArray(VAO);
-    
+
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(Vert), Vert, GL_DYNAMIC_DRAW);
-    
+
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    
+
     // Position attribute (2 floats)
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4*sizeof(GLfloat), (void*)0);
     glEnableVertexAttribArray(0);
-    
+
     // Texture coordinate attribute (2 floats)
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4*sizeof(GLfloat), (void*)(2*sizeof(GLfloat)));
     glEnableVertexAttribArray(1);
-    
+
     glBindVertexArray(0);
-    
+
     glBindVertexArray(0);
-    
+
     colorShader    = createShaderProgram("plain.vert",  "plain.frag");
     gradientShader = createShaderProgram("main.vert",   "main.frag");
     textShader     = createShaderProgram("text.vert",   "text.frag");
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, fontAtlasTex);
+    glUniform1i(glGetUniformLocation(textShader, "atlas"), 0);
 }
 
 
@@ -143,48 +146,56 @@ bool gameOver = false;
 int score = 0;
 GLFWwindow* window;
 /*--------------------------------------------------------Text writing----------------------------------------------------------*/
-
-pair<pair<float,float>,pair<float,float>> getCharUv(char c) {
+array<int,128> lookup;
+void setLookup() {
+    int a = 0;
+    for (char ch='A'; ch<'Z'+1; ch++) lookup[ch]=a++;
+    for (char ch='0'; ch<'9'+1; ch++) lookup[ch]=a++;
+    for (char ch='!'; ch<'/'+1; ch++) lookup[ch]=a++;
+    for (char ch=':'; ch<'@'+1; ch++) lookup[ch]=a++;
+}
+pair<pair<float,float>,pair<float,float>> getCharUv(unsigned char c) {
     const int atlasWidth  = 128;  // például 128 px széles
     const int atlasHeight = 64;  // és 128 px magas
     const int cellW       = 8;    // cella szélessége
     const int cellH       = 8;    // cella magassága
     const int cols        = 16;   // egy sorban ennyi cella
-    const int firstChar   = 65;   // ASCII kód az első cellához
+    //const int firstChar   = 65;   // ASCII kód az első cellához
 
-    int index = int(c) - firstChar;
+    //int index = int(c) - firstChar;
+    int index = lookup[c];
     if (index < 0) index = 0;  // határkezelés
     // oszlop és sor (0‑tól indulnak)
     int col = index % cols;
     int row = index / cols;
-    
+
     // OpenGL UV‑ben az (0,0) a textúra bal‑alsó sarka, a BMP‑dől az első cella viszont
     // a bal‑felsőben van, ezért a V‑t meg kell fordítani:
     float u1 = (col * cellW) / float(atlasWidth);
     float v2 = 1.0f - (row * cellH) / float(atlasHeight);
     float u2 = ((col+1) * cellW) / float(atlasWidth);
     float v1 = 1.0f - ((row+1) * cellH) / float(atlasHeight);
-    
+
     // Visszaadjuk: (u1,v1) az alsó‑bal sarok, (u2,v2) a felső‑jobb
     return { {u1, v1}, {u2, v2} };
-}    
+}
 void drawCell(int x, int y, float r, float g, float b, int CELL_SIZE, int c, bool issnake = true) {
-    
+
     float fx = (x * CELL_SIZE) / (float)WIDTH * 2 - 1;
     float fy = (y * CELL_SIZE) / (float)HEIGHT * 2 - 1;
     float sizeX = CELL_SIZE / (float)WIDTH * 2;
     float sizeY = CELL_SIZE / (float)HEIGHT * 2;
-    
+
     // Update all 4 vertices (position + UV)
     Vert[0] = fx;         Vert[1] = fy;         // Vertex 0 position
     Vert[2] = 0.0f;       Vert[3] = 0.0f;       // Vertex 0 UV
-    
+
     Vert[4] = fx+sizeX;   Vert[5] = fy;         // Vertex 1 position
     Vert[6] = 1.0f;       Vert[7] = 0.0f;       // Vertex 1 UV
-    
+
     Vert[8] = fx+sizeX;   Vert[9] = fy+sizeY;   // Vertex 2 position
     Vert[10] = 1.0f;      Vert[11] = 1.0f;      // Vertex 2 UV
-    
+
     Vert[12] = fx;        Vert[13] = fy+sizeY;   // Vertex 3 position
     Vert[14] = 0.0f;      Vert[15] = 1.0f;      // Vertex 3 UV
 
@@ -204,7 +215,7 @@ void drawCell(int x, int y, float r, float g, float b, int CELL_SIZE, int c, boo
     }
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-}    
+}
 
 void drawCell(float x, float y, float x2, float y2, float r=0.5f, float g=0.5f, float b=0.5f, string texture="") {
     Vert[0]=x;   Vert[1]=y;
@@ -215,18 +226,19 @@ void drawCell(float x, float y, float x2, float y2, float r=0.5f, float g=0.5f, 
     Vert[10]=0;  Vert[11]=0;
     Vert[12]=x;  Vert[13]=y2;
     Vert[14]=0;  Vert[15]=0;
-    
+
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(Vert), Vert);
 
     glUseProgram(colorShader);
     glUniform3f(glGetUniformLocation(colorShader, "mainColor"), 0.5f,0.5f,0.5f);
-    
+
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-}    
+}
 
-void drawCell(float x, float y, float x2, float y2, char c) {
+void drawCell(float x, float y, float x2, float y2, unsigned char c) {
+    if (!isprint(c)||isspace(c)) return;
     // 1) position coords
     Vert[0]  = x;   Vert[1]  = y;
     Vert[4]  = x2;  Vert[5]  = y;
@@ -244,9 +256,7 @@ void drawCell(float x, float y, float x2, float y2, char c) {
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(Vert), Vert);
 
     glUseProgram(textShader);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, fontAtlasTex);
-    glUniform1i(glGetUniformLocation(textShader, "atlas"), 0);
+
 
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -255,7 +265,7 @@ void drawCell(float x, float y, float x2, float y2, char c) {
 
 void drawCell(float x, float y, float x2, float y2, string texture) {
     drawCell(x, y, x2, y2, 0.5f, 0.5f, 0.5f, texture);
-}    
+}
 
 GLuint loadTexture(const char* filename) {
     GLuint textureID;
@@ -285,10 +295,12 @@ GLuint loadTexture(const char* filename) {
 }
 
 void write(string text, float size, float posX, float posY) {
+    int a=0;
     for(int i=0; i<text.size(); i++) {
-        drawCell(posX+(i*(size*1.2)),posY,posX+size+(i*(size*1.2)),posY+size, text[i]);
-    }    
-}    
+        drawCell(posX+((i-a)*(size*1.2)),posY,posX+size+((i-a)*(size*1.2)),posY+size, (unsigned char)(text[i]));
+        if (!isprint((unsigned char)(text[i]))) {a++;}
+    }
+}
 
 
 
@@ -345,7 +357,7 @@ void moveSnake() {
     if(moves.size()) {
         switch(moves.front()) {
         case 0:
-            dirXLoc = 0; dirYLoc = -1;  
+            dirXLoc = 0; dirYLoc = -1;
         break;
         case 1:
 			dirXLoc = 0; dirYLoc = 1;
@@ -411,6 +423,7 @@ void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods) 
 }
 
 int main() {
+    setLookup();
     if (!glfwInit()) {
         cerr << "Failed to initialize GLFW\n";
         return -1;
@@ -448,16 +461,15 @@ int main() {
         drawApple();
         drawSnake();
 
-        glfwSwapBuffers(window);
-        glfwPollEvents();
-
         if (!paused && !gameOver) {
-            string txt = "NUMS" /* we don't have numbers... to_string(score)*/;
+            string txt = "SCORE: "+to_string(score) /* we don't have numbers... to_string(score)*/;
             write(txt, 0.1f,-0.8f,0.8f);
             moveSnake();
             updateWindowTitle();
             this_thread::sleep_for(chrono::milliseconds(150));
         }
+        glfwSwapBuffers(window);
+        glfwPollEvents();
     }
 
     glDeleteVertexArrays(1, &VAO);

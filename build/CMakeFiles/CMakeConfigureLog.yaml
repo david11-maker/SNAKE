@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 2025. 07. 17. 1:01:29.
+      Build started 2025. 07. 19. 18:54:05.
       Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\4.0.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -52,7 +52,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.03
+      Time Elapsed 00:00:01.13
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,7 +80,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 2025. 07. 17. 1:01:30.
+      Build started 2025. 07. 19. 18:54:06.
       Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\4.0.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -106,7 +106,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.82
+      Time Elapsed 00:00:00.84
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-m2e9vd"
-      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-m2e9vd"
+      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-zc5xb7"
+      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-zc5xb7"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -139,39 +139,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-m2e9vd'
+        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-zc5xb7'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_79e37.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_52525.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2025. 07. 17. 1:01:32.
-        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m2e9vd\\cmTC_79e37.vcxproj" on node 1 (default targets).
+        Build started 2025. 07. 19. 18:54:08.
+        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zc5xb7\\cmTC_52525.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_79e37.dir\\Debug\\".
-          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m2e9vd\\Debug\\".
-          Creating directory "cmTC_79e37.dir\\Debug\\cmTC_79e37.tlog\\".
+          Creating directory "cmTC_52525.dir\\Debug\\".
+          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zc5xb7\\Debug\\".
+          Creating directory "cmTC_52525.dir\\Debug\\cmTC_52525.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_79e37.dir\\Debug\\cmTC_79e37.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_52525.dir\\Debug\\cmTC_52525.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79e37.dir\\Debug\\\\" /Fd"cmTC_79e37.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52525.dir\\Debug\\\\" /Fd"cmTC_52525.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30157 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79e37.dir\\Debug\\\\" /Fd"cmTC_79e37.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52525.dir\\Debug\\\\" /Fd"cmTC_52525.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m2e9vd\\Debug\\cmTC_79e37.exe" /INCREMENTAL /ILK:"cmTC_79e37.dir\\Debug\\cmTC_79e37.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-m2e9vd/Debug/cmTC_79e37.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-m2e9vd/Debug/cmTC_79e37.lib" /MACHINE:X64  /machine:x64 cmTC_79e37.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_79e37.vcxproj -> C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m2e9vd\\Debug\\cmTC_79e37.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zc5xb7\\Debug\\cmTC_52525.exe" /INCREMENTAL /ILK:"cmTC_52525.dir\\Debug\\cmTC_52525.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-zc5xb7/Debug/cmTC_52525.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-zc5xb7/Debug/cmTC_52525.lib" /MACHINE:X64  /machine:x64 cmTC_52525.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_52525.vcxproj -> C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zc5xb7\\Debug\\cmTC_52525.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_79e37.dir\\Debug\\cmTC_79e37.tlog\\unsuccessfulbuild".
-          Touching "cmTC_79e37.dir\\Debug\\cmTC_79e37.tlog\\cmTC_79e37.lastbuildstate".
-        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m2e9vd\\cmTC_79e37.vcxproj" (default targets).
+          Deleting file "cmTC_52525.dir\\Debug\\cmTC_52525.tlog\\unsuccessfulbuild".
+          Touching "cmTC_52525.dir\\Debug\\cmTC_52525.tlog\\cmTC_52525.lastbuildstate".
+        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zc5xb7\\cmTC_52525.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.72
+        Time Elapsed 00:00:00.92
         
       exitCode: 0
   -
@@ -211,8 +211,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-v5n4l8"
-      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-v5n4l8"
+      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-lvlcky"
+      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-lvlcky"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -226,39 +226,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-v5n4l8'
+        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-lvlcky'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_7c4da.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_1d515.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2025. 07. 17. 1:01:33.
-        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5n4l8\\cmTC_7c4da.vcxproj" on node 1 (default targets).
+        Build started 2025. 07. 19. 18:54:10.
+        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lvlcky\\cmTC_1d515.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_7c4da.dir\\Debug\\".
-          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5n4l8\\Debug\\".
-          Creating directory "cmTC_7c4da.dir\\Debug\\cmTC_7c4da.tlog\\".
+          Creating directory "cmTC_1d515.dir\\Debug\\".
+          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lvlcky\\Debug\\".
+          Creating directory "cmTC_1d515.dir\\Debug\\cmTC_1d515.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_7c4da.dir\\Debug\\cmTC_7c4da.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_1d515.dir\\Debug\\cmTC_1d515.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7c4da.dir\\Debug\\\\" /Fd"cmTC_7c4da.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1d515.dir\\Debug\\\\" /Fd"cmTC_1d515.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30157 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7c4da.dir\\Debug\\\\" /Fd"cmTC_7c4da.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1d515.dir\\Debug\\\\" /Fd"cmTC_1d515.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Python313\\Lib\\site-packages\\cmake\\data\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5n4l8\\Debug\\cmTC_7c4da.exe" /INCREMENTAL /ILK:"cmTC_7c4da.dir\\Debug\\cmTC_7c4da.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-v5n4l8/Debug/cmTC_7c4da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-v5n4l8/Debug/cmTC_7c4da.lib" /MACHINE:X64  /machine:x64 cmTC_7c4da.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_7c4da.vcxproj -> C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5n4l8\\Debug\\cmTC_7c4da.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lvlcky\\Debug\\cmTC_1d515.exe" /INCREMENTAL /ILK:"cmTC_1d515.dir\\Debug\\cmTC_1d515.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-lvlcky/Debug/cmTC_1d515.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-lvlcky/Debug/cmTC_1d515.lib" /MACHINE:X64  /machine:x64 cmTC_1d515.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1d515.vcxproj -> C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lvlcky\\Debug\\cmTC_1d515.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_7c4da.dir\\Debug\\cmTC_7c4da.tlog\\unsuccessfulbuild".
-          Touching "cmTC_7c4da.dir\\Debug\\cmTC_7c4da.tlog\\cmTC_7c4da.lastbuildstate".
-        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5n4l8\\cmTC_7c4da.vcxproj" (default targets).
+          Deleting file "cmTC_1d515.dir\\Debug\\cmTC_1d515.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1d515.dir\\Debug\\cmTC_1d515.tlog\\cmTC_1d515.lastbuildstate".
+        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lvlcky\\cmTC_1d515.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.71
+        Time Elapsed 00:00:00.72
         
       exitCode: 0
   -
@@ -300,12 +300,12 @@ events:
       - "C:/Python313/Lib/site-packages/cmake/data/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
       - "vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
-      - "CMakeLists.txt:13 (find_package)"
+      - "CMakeLists.txt:14 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-shw85i"
-      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-shw85i"
+      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-ere609"
+      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-ere609"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -318,39 +318,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-shw85i'
+        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-ere609'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_f590e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_db9e7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2025. 07. 17. 1:01:34.
-        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\cmTC_f590e.vcxproj" on node 1 (default targets).
+        Build started 2025. 07. 19. 18:54:11.
+        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\cmTC_db9e7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f590e.dir\\Debug\\".
-          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\Debug\\".
-          Creating directory "cmTC_f590e.dir\\Debug\\cmTC_f590e.tlog\\".
+          Creating directory "cmTC_db9e7.dir\\Debug\\".
+          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\Debug\\".
+          Creating directory "cmTC_db9e7.dir\\Debug\\cmTC_db9e7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f590e.dir\\Debug\\cmTC_f590e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_db9e7.dir\\Debug\\cmTC_db9e7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f590e.dir\\Debug\\\\" /Fd"cmTC_f590e.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\src.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db9e7.dir\\Debug\\\\" /Fd"cmTC_db9e7.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30157 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           src.c
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f590e.dir\\Debug\\\\" /Fd"cmTC_f590e.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\src.c"
-        C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\cmTC_f590e.vcxproj]
-        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\cmTC_f590e.vcxproj" (default targets) -- FAILED.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db9e7.dir\\Debug\\\\" /Fd"cmTC_db9e7.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\src.c"
+        C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\cmTC_db9e7.vcxproj]
+        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\cmTC_db9e7.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\cmTC_f590e.vcxproj" (default target) (1) ->
+        "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\cmTC_db9e7.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shw85i\\cmTC_f590e.vcxproj]
+          C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ere609\\cmTC_db9e7.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.43
+        Time Elapsed 00:00:00.46
         
       exitCode: 1
   -
@@ -363,12 +363,12 @@ events:
       - "C:/Python313/Lib/site-packages/cmake/data/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
       - "vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
-      - "CMakeLists.txt:13 (find_package)"
+      - "CMakeLists.txt:14 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-pxdvwv"
-      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-pxdvwv"
+      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-2f9ywj"
+      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-2f9ywj"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -381,41 +381,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-pxdvwv'
+        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-2f9ywj'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_eaf5c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_2fe6a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2025. 07. 17. 1:01:35.
-        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\cmTC_eaf5c.vcxproj" on node 1 (default targets).
+        Build started 2025. 07. 19. 18:54:12.
+        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\cmTC_2fe6a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_eaf5c.dir\\Debug\\".
-          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\Debug\\".
-          Creating directory "cmTC_eaf5c.dir\\Debug\\cmTC_eaf5c.tlog\\".
+          Creating directory "cmTC_2fe6a.dir\\Debug\\".
+          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\Debug\\".
+          Creating directory "cmTC_2fe6a.dir\\Debug\\cmTC_2fe6a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_eaf5c.dir\\Debug\\cmTC_eaf5c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_2fe6a.dir\\Debug\\cmTC_2fe6a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eaf5c.dir\\Debug\\\\" /Fd"cmTC_eaf5c.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2fe6a.dir\\Debug\\\\" /Fd"cmTC_2fe6a.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30157 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckFunctionExists.c
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eaf5c.dir\\Debug\\\\" /Fd"cmTC_eaf5c.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2fe6a.dir\\Debug\\\\" /Fd"cmTC_2fe6a.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\Debug\\cmTC_eaf5c.exe" /INCREMENTAL /ILK:"cmTC_eaf5c.dir\\Debug\\cmTC_eaf5c.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-pxdvwv/Debug/cmTC_eaf5c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-pxdvwv/Debug/cmTC_eaf5c.lib" /MACHINE:X64  /machine:x64 cmTC_eaf5c.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\cmTC_eaf5c.vcxproj]
-        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\cmTC_eaf5c.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\Debug\\cmTC_2fe6a.exe" /INCREMENTAL /ILK:"cmTC_2fe6a.dir\\Debug\\cmTC_2fe6a.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-2f9ywj/Debug/cmTC_2fe6a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-2f9ywj/Debug/cmTC_2fe6a.lib" /MACHINE:X64  /machine:x64 cmTC_2fe6a.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\cmTC_2fe6a.vcxproj]
+        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\cmTC_2fe6a.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\cmTC_eaf5c.vcxproj" (default target) (1) ->
+        "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\cmTC_2fe6a.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pxdvwv\\cmTC_eaf5c.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2f9ywj\\cmTC_2fe6a.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.55
+        Time Elapsed 00:00:00.56
         
       exitCode: 1
   -
@@ -428,12 +428,12 @@ events:
       - "C:/Python313/Lib/site-packages/cmake/data/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
       - "vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
-      - "CMakeLists.txt:13 (find_package)"
+      - "CMakeLists.txt:14 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-c4uty4"
-      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-c4uty4"
+      source: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-snrf9y"
+      binary: "C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-snrf9y"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -446,41 +446,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-c4uty4'
+        Change Dir: 'C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-snrf9y'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_70b4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_3c648.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2025. 07. 17. 1:01:36.
-        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\cmTC_70b4b.vcxproj" on node 1 (default targets).
+        Build started 2025. 07. 19. 18:54:13.
+        Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\cmTC_3c648.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_70b4b.dir\\Debug\\".
-          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\Debug\\".
-          Creating directory "cmTC_70b4b.dir\\Debug\\cmTC_70b4b.tlog\\".
+          Creating directory "cmTC_3c648.dir\\Debug\\".
+          Creating directory "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\Debug\\".
+          Creating directory "cmTC_3c648.dir\\Debug\\cmTC_3c648.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_70b4b.dir\\Debug\\cmTC_70b4b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_3c648.dir\\Debug\\cmTC_3c648.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_70b4b.dir\\Debug\\\\" /Fd"cmTC_70b4b.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c648.dir\\Debug\\\\" /Fd"cmTC_3c648.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30157 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckFunctionExists.c
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_70b4b.dir\\Debug\\\\" /Fd"cmTC_70b4b.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c648.dir\\Debug\\\\" /Fd"cmTC_3c648.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\Debug\\cmTC_70b4b.exe" /INCREMENTAL /ILK:"cmTC_70b4b.dir\\Debug\\cmTC_70b4b.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-c4uty4/Debug/cmTC_70b4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-c4uty4/Debug/cmTC_70b4b.lib" /MACHINE:X64  /machine:x64 cmTC_70b4b.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\cmTC_70b4b.vcxproj]
-        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\cmTC_70b4b.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\Debug\\cmTC_3c648.exe" /INCREMENTAL /ILK:"cmTC_3c648.dir\\Debug\\cmTC_3c648.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-snrf9y/Debug/cmTC_3c648.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/salid/snake/build/CMakeFiles/CMakeScratch/TryCompile-snrf9y/Debug/cmTC_3c648.lib" /MACHINE:X64  /machine:x64 cmTC_3c648.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\cmTC_3c648.vcxproj]
+        Done Building Project "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\cmTC_3c648.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\cmTC_70b4b.vcxproj" (default target) (1) ->
+        "C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\cmTC_3c648.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c4uty4\\cmTC_70b4b.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\salid\\snake\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snrf9y\\cmTC_3c648.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.54
+        Time Elapsed 00:00:00.60
         
       exitCode: 1
 ...

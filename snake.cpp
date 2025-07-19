@@ -122,9 +122,9 @@ void setup() {
 
     glBindVertexArray(0);
 
-    colorShader    = createShaderProgram("plain.vert",  "plain.frag");
-    gradientShader = createShaderProgram("main.vert",   "main.frag");
-    textShader     = createShaderProgram("text.vert",   "text.frag");
+    colorShader    = createShaderProgram("./assets/plain.vert",  "./assets/plain.frag");
+    gradientShader = createShaderProgram("./assets/main.vert",   "./assets/main.frag");
+    textShader     = createShaderProgram("./assets/text.vert",   "./assets/text.frag");
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, fontAtlasTex);
     glUniform1i(glGetUniformLocation(textShader, "atlas"), 0);
@@ -279,7 +279,7 @@ GLuint loadTexture(const char* filename) {
     glGenTextures(1, &textureID);
     glBindTexture(GL_TEXTURE_2D, textureID);
 
-    ifstream file(string(filename) + ".bmp", ios::binary);
+    ifstream file("./assets/" + string(filename) + ".bmp", ios::binary);
     stringstream ss; ss << file.rdbuf();
     string str = ss.str();
     const char* buffer = str.c_str();

@@ -9,6 +9,7 @@
 #include <fstream>
 #include <sstream>
 #include <queue>
+#include <array>
 
 #define mix(a,b,t) ((b)*(t)+(a)*(1-(t)))
 
@@ -146,13 +147,19 @@ bool gameOver = false;
 int score = 0;
 GLFWwindow* window;
 /*--------------------------------------------------------Text writing----------------------------------------------------------*/
-array<int,128> lookup;
+std::array<int, static_cast<std::size_t>(128)> lookup;
+
 void setLookup() {
     int a = 0;
-    for (char ch='A'; ch<'Z'+1; ch++) lookup[ch]=a++;
-    for (char ch='0'; ch<'9'+1; ch++) lookup[ch]=a++;
-    for (char ch='!'; ch<'/'+1; ch++) lookup[ch]=a++;
-    for (char ch=':'; ch<'@'+1; ch++) lookup[ch]=a++;
+    string chars = 
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "0123456789"
+        "!\"#$%&'()*+,-./"
+        ":;<=>?@";
+
+    for (char ch : chars) {
+        lookup[ch] = a++;
+    }
 }
 pair<pair<float,float>,pair<float,float>> getCharUv(unsigned char c) {
     const int atlasWidth  = 128;  // például 128 px széles

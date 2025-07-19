@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Vcpkg toolchain beállítás (ha használod)
 if(DEFINED ENV{VCPKG_ROOT})
-    set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+    set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake"
         CACHE STRING "Vcpkg toolchain file")
 endif()
 
@@ -45,13 +45,20 @@ add_custom_command(TARGET snake POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${ASSET_FILES} ${ASSETS_OUTPUT_DIR}
 )
 
-# ZIP fájl neve és helye
-set(ZIP_OUTPUT "${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE}/snake_release.zip")
+set(RELEASE_ZIP_NAME "snake_release.zip")
+set(ZIP_SOURCE_PATH "${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE}/${RELEASE_ZIP_NAME}")
+set(ZIP_TARGET_PATH "${CMAKE_SOURCE_DIR}/${RELEASE_ZIP_NAME}")
 
-# ZIP létrehozása az exe-ből és az assets mappából
+# ZIP létrehozása
 add_custom_command(TARGET snake POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E echo "Creating release ZIP..."
-    COMMAND ${CMAKE_COMMAND} -E tar "cfv" ${ZIP_OUTPUT} --format=zip
+    COMMAND ${CMAKE_COMMAND} -E echo ">> Csomagolás ZIP-be..."
+    COMMAND ${CMAKE_COMMAND} -E tar "cfv" "${ZIP_SOURCE_PATH}" --format=zip
         "$<TARGET_FILE:snake>"
-        -- "${ASSETS_OUTPUT_DIR}"
+        "${CMAKE_SOURCE_DIR}/assets"
+)
+
+# ZIP átmásolása a /snake/ mappába (projekt gyökérbe)
+add_custom_command(TARGET snake POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E echo ">> ZIP átmásolása /snake mappába..."
+    COMMAND ${CMAKE_COMMAND} -E copy "${ZIP_SOURCE_PATH}" "${ZIP_TARGET_PATH}"
 )
